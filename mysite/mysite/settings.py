@@ -1,6 +1,7 @@
 import os
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+print DATA_DIR
 """
 Django settings for mysite project.
 
@@ -184,13 +185,13 @@ CMS_TEMPLATES = (
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
-
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.sqlite3',
         'HOST': 'localhost',
-        'NAME': 'project.db',
+        'NAME': os.path.join(BASE_DIR,'project.db'),
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
