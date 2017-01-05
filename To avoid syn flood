@@ -1,0 +1,7 @@
+
+
+http://security.stackexchange.com/questions/34298/stopping-ddos-tcp-syn-and-udp-flood-attacks 
+
+
+To save the ip tables permana : ubuntun 16
+netfilter-persistent save
