@@ -1,25 +1,27 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Varsity | Home</title>
+    <meta name="description" content="{% page_attribute 'meta_description' %}">
+    <title>LearnSdnNfv-{%page_attribute 'page_title' %}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static "assets/img/favicon.ico" %}" type="image/x-icon">
 
     <!-- Font awesome -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="{% static "assets/css/font-awesome.css" %}" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="{% static "assets/css/bootstrap.css" %}" rel="stylesheet">   
     <!-- Slick slider -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <link rel="stylesheet" type="text/css" href="{% static "assets/css/slick.css" %}" >          
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
+    <link id="switcher" href="{% static "assets/css/theme-color/default-theme.css" %}"  rel="stylesheet">          
 
     <!-- Main style sheet -->
-    <link href="assets/css/style.css" rel="stylesheet">    
+    <link href="{% static "assets/css/style.css" %}" rel="stylesheet">    
 
    
     <!-- Google Fonts -->
@@ -149,7 +151,7 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="{% static "assets/img/slider/1.jpg" %}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
@@ -165,7 +167,7 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/2.jpg" alt="img">
+          <img src="{% static "assets/img/slider/2.jpg" %}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
@@ -181,7 +183,7 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/3.jpg" alt="img">
+          <img src="{% static "assets/img/slider/3.jpg" %}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
